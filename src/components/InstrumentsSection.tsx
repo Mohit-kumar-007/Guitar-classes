@@ -21,42 +21,42 @@ const InstrumentsSection = () => {
       icon: guitarIcon, 
       description: 'Acoustic & Electric Guitar lessons for all skill levels',
       color: 'from-amber-500 to-orange-600',
-      sound: 'guitar-strum'
+      sound: '/Guitar.mp3'
     },
     { 
       name: 'Piano', 
       icon: pianoIcon, 
       description: 'Classical and modern piano techniques',
       color: 'from-slate-600 to-slate-800',
-      sound: 'piano-chord'
+      sound: '/Piano.mp3'
     },
     { 
       name: 'Harmonium', 
       icon: harmoniumIcon, 
       description: 'Traditional Indian classical instrument',
       color: 'from-red-500 to-red-700',
-      sound: 'harmonium-note'
+      sound: '/Harmonium.mp3'
     },
     { 
       name: 'Harmonika', 
       icon: harmonicaIcon, 
       description: 'Pocket-sized melodic instrument',
       color: 'from-blue-500 to-blue-700',
-      sound: 'harmonica-melody'
+      sound: '/Harmonika.mp3'
     },
     { 
       name: 'Ukulele', 
       icon: ukuleleIcon, 
       description: 'Fun and easy to learn string instrument',
       color: 'from-green-500 to-green-700',
-      sound: 'ukulele-strum'
+      sound: '/Ukulele.mp3'
     },
     { 
       name: 'Keyboard', 
       icon: keyboardIcon, 
       description: 'Electronic keyboard and synthesizer',
       color: 'from-purple-500 to-purple-700',
-      sound: 'keyboard-chord'
+      sound: '/Keyboard.mp3'
     },
   ];
 
@@ -89,14 +89,21 @@ const InstrumentsSection = () => {
     });
   };
 
-  const playInstrumentSound = (instrumentName: string, soundId: string) => {
+  const playInstrumentSound = (instrumentName: string, soundPath: string) => {
     if (isMuted) return;
-    
     setPlayingInstrument(instrumentName);
-    
-    // Simulate sound playing (in a real app, you'd use actual audio files)
-    console.log(`Playing ${soundId} sound...`);
-    
+
+    // Play the instrument sound for 4 seconds
+    const audio = new Audio(soundPath);
+    audio.currentTime = 0;
+    audio.play();
+    const stopTimeout = setTimeout(() => {
+      audio.pause();
+      audio.currentTime = 0;
+    }, 4000);
+    // Clean up audio on unmount or next play
+    audio.onended = () => clearTimeout(stopTimeout);
+
     // Create a visual feedback effect
     const card = document.querySelector(`[data-instrument="${instrumentName}"]`);
     if (card) {
@@ -105,7 +112,7 @@ const InstrumentsSection = () => {
         (card as HTMLElement).style.transform = 'scale(1)';
       }, 300);
     }
-    
+
     setTimeout(() => setPlayingInstrument(null), 1000);
   };
 
@@ -171,7 +178,7 @@ const InstrumentsSection = () => {
                     
                     <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <p className="text-sm text-accent font-medium">
-                        {isMuted ? 'Click to see animation' : 'Click to hear sound'}
+                        {isMuted ? 'Click to see animation' : ''}
                       </p>
                     </div>
                   </div>
