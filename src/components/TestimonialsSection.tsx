@@ -8,46 +8,46 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: 'Jennifer Martinez',
-      role: 'Parent of Piano Student',
-      content: 'My daughter has been taking piano lessons here for 2 years. The progress she has made is incredible! The teachers are patient, skilled, and truly care about each student\'s development.',
+      name: 'Chetna Sharma',
+      role: 'Piano Student',
+      content: 'Best ever academy for learning musical instruments.Teacher is also very down to earth and humble and teaches students with his full potential and with fun❤️Overall its the best academy🌸Dont wait just go and fulfill your passion..',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b9c8c10b?w=100&h=100&fit=crop&crop=face'
+      image: '/1116.png'
     },
     {
-      name: 'Robert Chen',
+      name: 'Mohit Kumar',
       role: 'Guitar Student',
-      content: 'As an adult learner, I was nervous about starting guitar lessons. The instructors here made me feel comfortable and confident. I\'m now playing songs I never thought I could!',
+      content: 'I was nervous about starting guitar lessons. The instructors here made me feel comfortable and confident. A fantastic place to start a new journey with music',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+      image: '/Mohit kumar.jpg'
     },
     {
-      name: 'Maria Rodriguez',
+      name: 'Sweta Jangra',
       role: 'Ukulele Student',
-      content: 'The ukulele classes are so much fun! I love the relaxed atmosphere and the way they teach. Within months, I was playing my favorite songs and even performing for friends.',
+      content: 'Whether you are from music background or not, The Guitar Academy is a great place to learn musical instruments and vocals from basic to advance level. Vinod sir is really helpful, he focuses on each and every student equally. Friendly environment, highly recommended.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+      image: '/1115.png'
     },
     {
-      name: 'Dr. James Wilson',
+      name: 'Ritesh Sharma',
       role: 'Parent of Keyboard Student',
-      content: 'Professional, organized, and results-driven. My son has developed not just technical skills but also a deep love for music. The academy has exceeded our expectations.',
+      content: 'Amazing I liked it very so much ,Five days instrument classes and one day vocal classes really this is very niceCome and do  better your skills and do not leave this opportunity ,first time music academy opend in Mohindergarh so I say only that come at least once and see it 🙃✨😍',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+      image: '/Ritesh Sharma.png'
     },
     {
-      name: 'Lisa Thompson',
+      name: 'Devinder Kumar',
       role: 'Harmonium Student',
-      content: 'Learning harmonium here has been a spiritual journey. The traditional approach combined with modern teaching methods creates the perfect learning environment.',
+      content: 'Very good music  academy in mahendergarh . sir bahut accha shika te hai.  Sach main mara bahut acha experience rha . thanks sir',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face'
+      image: '/Devinder Kumar.png'
     },
     {
-      name: 'Mark Johnson',
+      name: 'Future Farming Indian',
       role: 'Harmonica Student',
-      content: 'I never thought I could learn harmonica at 45! The instructors are patient and encouraging. Now I play with a local band every weekend. Dreams do come true here!',
+      content: 'Best guitar class in mahendergarh',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face'
+      image: '/Future Farming Indian.png'
     }
   ];
 
