@@ -117,10 +117,10 @@ const StudentsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Our Proud Students
+            Our  Students
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Celebrating the musical achievements of our talented students who inspire us every day
+            We are a Family of Musicians, Nurturing Talent and Inspiring Creativity.
           </p>
         </div>
 

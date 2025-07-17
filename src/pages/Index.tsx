@@ -39,9 +39,9 @@ const Index = () => {
               <h3 className="text-xl font-bold mb-4">Contact Info</h3>
               <div className="space-y-2 text-primary-foreground/80">
                 <p>theguitaracademy0071@gmail.com</p>
-                <p>+1 (555) 123-4567</p>
-                <p>Mon-Sat: 9AM-8PM</p>
-                <p>Sun: 10AM-6PM</p>
+                <p>+91 9718100608</p>
+                <p>Mon-Sat: 4pM-8PM</p>
+                <p>Sun: Closed</p>
               </div>
             </div>
           </div>

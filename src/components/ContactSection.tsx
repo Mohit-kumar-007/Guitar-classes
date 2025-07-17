@@ -90,19 +90,19 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+91 9718100608',
+      link: 'tel:+919718100608'
     },
     {
       icon: MapPin,
       title: 'Location',
-      content: 'Visit us at our academy',
+      content: 'Click here to view on Google Maps',
       link: 'https://maps.app.goo.gl/7wDTRYhXdnWBWhKc7'
     },
     {
       icon: Clock,
       title: 'Hours',
-      content: 'Mon-Sat: 9AM-8PM, Sun: 10AM-6PM',
+      content: 'Mon-Sat: 4pM-8PM, Sun: Closed',
       link: null
     }
   ];

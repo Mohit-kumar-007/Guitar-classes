@@ -32,8 +32,8 @@ const HeroSection = () => {
   }, []);
 
   const stats = [
-    { icon: Users, label: 'Students', value: '500+' },
-    { icon: Award, label: 'Years Experience', value: '15+' },
+    { icon: Users, label: 'Students', value: '100+' },
+    { icon: Award, label: 'Years Experience', value: '8+' },
     { icon: Music, label: 'Instruments', value: '6' },
     { icon: Star, label: 'Reviews', value: '4.9/5' },
   ];
@@ -54,21 +54,22 @@ const HeroSection = () => {
                   alt="Music Instructor" 
                   className="w-48 h-48 mx-auto rounded-full object-cover shadow-accent mb-6 ring-4 ring-secondary/30"
                 />
-                <h2 className="text-3xl font-bold text-primary mb-2">Master Musician</h2>
+                <h2 className="text-3xl font-bold text-primary mb-2">Vinod Kumar</h2>
                 <p className="text-xl text-muted-foreground mb-4">Professional Music Instructor</p>
                 
                 <div className="space-y-2 mb-6">
                   <Badge variant="secondary" className="bg-gradient-hero text-primary-foreground">
-                    Certified Music Teacher
+                    A Brilliant  Music Teacher
                   </Badge>
                   <Badge variant="outline" className="border-accent text-accent">
-                    15+ Years Experience
+                    8+ Years Experience
                   </Badge>
                 </div>
                 
                 <p className="text-foreground leading-relaxed">
                   Passionate about nurturing musical talent and helping students discover the joy of music. 
                   Specialized in multiple instruments with a focus on personalized learning approaches.
+                  
                 </p>
               </div>
             </CardContent>

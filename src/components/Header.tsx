@@ -51,7 +51,7 @@ const Header = () => {
             />
             <div className="font-display">
               <h1 className="text-xl font-bold text-primary">Guitar Music Academy</h1>
-              <p className="text-sm text-muted-foreground">Learn • Play • Excel</p>
+              <p className="text-sm text-muted-foreground">Love The Music</p>
             </div>
           </div>
 
