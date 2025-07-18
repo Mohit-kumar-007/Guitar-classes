@@ -33,7 +33,7 @@ const HeroSection = () => {
 
   const stats = [
     { icon: Users, label: 'Students', value: '100+' },
-    { icon: Award, label: 'Years Experience', value: '8+' },
+    { icon: Award, label: 'Years Experience', value: '20+' },
     { icon: Music, label: 'Instruments', value: '6' },
     { icon: Star, label: 'Reviews', value: '4.9/5' },
   ];
@@ -62,7 +62,7 @@ const HeroSection = () => {
                     A Brilliant  Music Teacher
                   </Badge>
                   <Badge variant="outline" className="border-accent text-accent">
-                    8+ Years Experience
+                    20+ Years Experience
                   </Badge>
                 </div>
                 

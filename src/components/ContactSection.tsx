@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -56,23 +57,35 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate sending email (in a real app, you'd use a service like EmailJS or a backend API)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Initialize EmailJS with your public key
+      emailjs.init("1QbprMcKK1Sz28dXd");
+
+      const templateParams = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      };
+
+      console.log('Sending email with params:', templateParams);
       
-      // Create mailto link as fallback
-      const mailtoLink = `mailto:theguitaracademy0071@gmail.com?subject=New Contact Form Submission from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
-      window.location.href = mailtoLink;
+      const result = await emailjs.send(
+        "service_cv8nwn9",
+        "template_v0xf7kl",  // Make sure this matches your template ID exactly
+        templateParams
+      );
       
+      console.log('EmailJS response:', result);
+
       toast({
         title: "Message Sent!",
         description: "Thank you for your message. We'll get back to you soon!",
       });
-      
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
+        title: "Error Sending Message",
+        description: error instanceof Error ? error.message : "Failed to send message. Please try again.",
         variant: "destructive",
       });
     } finally {
@@ -234,7 +247,7 @@ const ContactSection = () => {
                 
                 <div className="relative h-64 bg-muted rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.456789!2d-73.985428!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3513.994371440199!2d76.1506875!3d28.2681875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912bf16995beb7f%3A0x631d7423201b6c69!2sTHE%20GUITAR%20ACADEMY!5e0!3m2!1sen!2sin!4v1752847705564!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
