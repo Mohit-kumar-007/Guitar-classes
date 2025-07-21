@@ -58,7 +58,7 @@ const ContactSection = () => {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init("1QbprMcKK1Sz28dXd");
+      emailjs.init("-IR61LNJe 9HUn6af");
 
       const templateParams = {
         name: formData.name,
@@ -69,8 +69,8 @@ const ContactSection = () => {
       console.log('Sending email with params:', templateParams);
       
       const result = await emailjs.send(
-        "service_cv8nwn9",
-        "template_v0xf7kl",  // Make sure this matches your template ID exactly
+        "service_9r19bsf",
+        "template_zju34we",  // Make sure this matches your template ID exactly
         templateParams
       );
       
