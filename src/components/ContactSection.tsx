@@ -58,7 +58,7 @@ const ContactSection = () => {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init("-IR61LNJe_9HUn6af");
+      emailjs.init("-lR61LNJe_9HUn6af");
 
       const templateParams = {
         name: formData.name,
