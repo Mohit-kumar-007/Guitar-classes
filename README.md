@@ -1,73 +1,174 @@
-# Welcome to your Lovable project
+# Guitar Music Academy
 
-## Project info
+A modern, responsive website for Guitar Music Academy featuring course information, instructor profiles, student testimonials, and contact functionality.
 
-**URL**: https://lovable.dev/projects/15359f5f-8e26-42c3-aa8f-b0c9e04b77cc
+## 🎵 About
 
-## How can I edit this code?
+Guitar Music Academy is a professional music education platform dedicated to nurturing musical talent and inspiring creativity through expert instruction. We offer comprehensive music lessons across multiple instruments with a focus on personalized learning approaches.
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- **Responsive Design**: Fully responsive website that works on all devices
+- **Interactive UI**: Modern interface with smooth animations and hover effects
+- **Course Information**: Detailed information about available music instruments and courses
+- **Instructor Profile**: Professional instructor showcase with experience and qualifications
+- **Student Testimonials**: Real reviews and feedback from students
+- **Contact Form**: Working contact form with EmailJS integration
+- **Interactive Map**: Embedded Google Maps for easy location finding
+- **Social Media Integration**: Direct links to YouTube and Facebook pages
+- **Professional Design**: Clean, modern design with guitar academy branding
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/15359f5f-8e26-42c3-aa8f-b0c9e04b77cc) and start prompting.
+## 🎸 Instruments Offered
 
-Changes made via Lovable will be committed automatically to this repo.
+- Guitar (Acoustic & Electric)
+- Piano/Keyboard
+- Ukulele
+- Harmonica
+- Harmonium
+- And more!
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Radix UI components with shadcn/ui
+- **Icons**: Lucide React icons
+- **Email Service**: EmailJS for contact form
+- **Animations**: Custom CSS animations and transitions
+- **Maps**: Google Maps integration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mohit-kumar-007/Guitar-classes.git
+   cd Guitar-classes
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:8080` to view the website
+
+### Build for Production
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 📧 Contact Information
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **Email**: theguitaracademy0071@gmail.com
+- **Phone**: +91 9718100608
+- **Hours**: Mon-Sat: 4PM-8PM, Sun: Closed
+- **Location**: [View on Google Maps](https://maps.app.goo.gl/7wDTRYhXdnWBWhKc7)
 
-**Use GitHub Codespaces**
+## 🌐 Social Media
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **YouTube**: [Guitar Academy Channel](https://youtube.com/@youryoutubechannel)
+- **Facebook**: [Guitar Academy Page](https://facebook.com/yourfacebookpage)
 
-## What technologies are used for this project?
+## 📁 Project Structure
 
-This project is built with:
+```
+guitar-music-academy/
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── ui/             # UI components (buttons, cards, etc.)
+│   │   ├── Header.tsx      # Navigation header
+│   │   ├── HeroSection.tsx # Landing section with instructor info
+│   │   ├── InstrumentsSection.tsx # Instruments showcase
+│   │   ├── StudentsSection.tsx    # Student testimonials
+│   │   ├── TestimonialsSection.tsx # Reviews section
+│   │   └── ContactSection.tsx     # Contact form and info
+│   ├── pages/              # Page components
+│   │   └── Index.tsx       # Main page layout
+│   ├── assets/             # Images and static files
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Utility functions
+│   └── main.tsx           # Application entry point
+├── public/                 # Public assets
+└── package.json           # Project dependencies
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 Key Features Implemented
 
-## How can I deploy this project?
+### 🏠 Home Section
+- Instructor profile with photo and credentials
+- Academy statistics and achievements
+- Responsive card layout with animations
 
-Simply open [Lovable](https://lovable.dev/projects/15359f5f-8e26-42c3-aa8f-b0c9e04b77cc) and click on Share -> Publish.
+### 🎼 Instruments Section
+- Interactive instrument cards with hover effects
+- Audio samples for each instrument
+- Detailed course information
 
-## Can I connect a custom domain to my Lovable project?
+### 👥 Students Section
+- Student testimonials and reviews
+- Photo gallery of students
+- Success stories and achievements
 
-Yes, you can!
+### 📞 Contact Section
+- Working contact form with validation
+- EmailJS integration for message sending
+- Interactive Google Maps integration
+- Social media links
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔧 Configuration
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### EmailJS Setup
+To configure the contact form:
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Update the service ID, template ID, and public key in `ContactSection.tsx`
+
+### Google Maps
+The embedded map uses Google Maps. Update the map URL in `ContactSection.tsx` if needed.
+
+## 📱 Responsive Design
+
+The website is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🚀 Deployment
+
+The project can be deployed to any static hosting service:
+- Vercel (recommended)
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+## 👨‍💻 Developer
+
+**Mohit Kumar**
+- GitHub: [@Mohit-kumar-007](https://github.com/Mohit-kumar-007)
+- Email: sciencerocks8950@gmail.com
+
+## 📄 License
+
+This project is created for Guitar Music Academy. All rights reserved.
+
+## 🤝 Contributing
+
+This is a private project for Guitar Music Academy. For any suggestions or improvements, please contact the developer.
+
+---
+
+**Guitar Music Academy** - *Where musical dreams come to life through expert instruction, passionate teaching, and a community that celebrates every note.*

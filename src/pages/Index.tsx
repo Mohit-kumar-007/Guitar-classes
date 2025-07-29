@@ -5,6 +5,7 @@ import InstrumentsSection from '@/components/InstrumentsSection';
 import StudentsSection from '@/components/StudentsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
+import { Youtube, Facebook } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -42,6 +43,31 @@ const Index = () => {
                 <p>+91 9718100608</p>
                 <p>Mon-Sat: 4pM-8PM</p>
                 <p>Sun: Closed</p>
+              </div>
+              
+              {/* Social Media Icons */}
+              <div className="mt-6">
+                <h4 className="text-lg font-semibold mb-3">Follow Us</h4>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://youtube.com/@theguitaracademy-tga?si=kQ-J4CAoA1ncc9M8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary-foreground/80 hover:text-red-500 transition-colors duration-300"
+                    aria-label="Visit our YouTube channel"
+                  >
+                    <Youtube size={24} />
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/436386009549172/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary-foreground/80 hover:text-blue-500 transition-colors duration-300"
+                    aria-label="Visit our Facebook page"
+                  >
+                    <Facebook size={24} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
